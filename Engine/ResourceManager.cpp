@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "EngineCore.h"
-#include "ReadData.h"
 
 ID3D11Device* ResourceManager::device = nullptr;
 ID3D11DeviceContext* ResourceManager::context = nullptr;
