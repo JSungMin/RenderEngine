@@ -188,11 +188,11 @@ void Sample::CreateDeviceDependentResources()
     auto device = m_deviceResources->GetD3DDevice();
 	auto context = m_deviceResources->GetD3DDeviceContext();
 
-	ResourceManager::Init(device);
+	ResourceManager::Init(m_deviceResources.get());
 
     // Load and create shaders.
-	ResourceManager::LoadVertexShader(L"VertexShader.cso", m_spVertexShader.ReleaseAndGetAddressOf());
-	ResourceManager::LoadPixelShader(L"PixelShader.cso", m_spPixelShader.ReleaseAndGetAddressOf());
+	ResourceManager::LoadShader<ID3D11VertexShader>(L"VertexShader.cso", m_spVertexShader.ReleaseAndGetAddressOf());
+	ResourceManager::LoadShader<ID3D11PixelShader>(L"PixelShader.cso", m_spPixelShader.ReleaseAndGetAddressOf());
 
 	auto vsBlob = ResourceManager::GetShaderBlob("VertexShader.cso");
 
