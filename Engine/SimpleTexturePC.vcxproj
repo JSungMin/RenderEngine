@@ -93,6 +93,7 @@
     <ClInclude Include="..\..\..\Kits\ATGTK\FindMedia.h" />
     <ClInclude Include="..\..\..\Kits\ATGTK\ReadData.h" />
     <ClInclude Include="EngineCore.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="MonoObject.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="SimpleTexturePC.h" />
@@ -100,6 +101,7 @@
     <ClInclude Include="StepTimer.h" />
     <ClInclude Include="DeviceResources.h" />
     <ClInclude Include="Texture.h" />
+    <ClInclude Include="Transform.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EngineCore.cpp" />

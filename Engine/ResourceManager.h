@@ -11,9 +11,9 @@ public:
 	{
 		Init(device);
 	}
-public:
+
 	static void Init(DX::DeviceResources* deviceResource);
-public:
+
 	static ID3D11Device* GetDevice() { return device; }
 	static ID3D11DeviceContext* GetContext() { return context; }
 

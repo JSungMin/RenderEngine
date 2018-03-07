@@ -54,6 +54,12 @@
     <ClInclude Include="Texture.h">
       <Filter>RenderEngine\Core\Inc</Filter>
     </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>RenderEngine\Core\Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>RenderEngine\Core\Inc</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
